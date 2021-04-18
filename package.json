@@ -4,11 +4,13 @@
   "description": "Nigel Betting Bot",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Harrison",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
+    "discord.js": "^12.5.3",
+    "dotenv": "^8.2.0"
   }
 }
