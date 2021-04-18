@@ -6,6 +6,7 @@ const commands = {}
 
 const files = fs.readdirSync('./commands')
 const jsFiles = files.filter(file => file.endsWith(".js"))
+
 jsFiles.forEach(commandFile => {
   const command = require(`./commands/${commandFile}`)
   if(command.prefix && command.fn) {
